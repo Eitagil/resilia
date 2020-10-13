@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifra de César</title>
+</head>
+
+<body>
+
+    <script>
+
+        function cifraDeCesar(mensagem, deslocamento){
+            
+            var arrayfrase = frase.split("");
+
+            var arrChar = [];
+
+            for(var i = 0; i<arrayfrase.length; i++){
+                arrChar.push(arrayfrase[i].charCodeAt() + deslocamento)
+            }
+
+            var arrCode = []
+
+            for (var i = 0; i<arrChar.length; i++){
+                arrCode.push(String.fromCharCode(arrChar[i]))
+            }
+
+            return arrCode.join("")
+        }
+
+            document.write(cifraDeCesar('GILVAN', 6)) //[O,l,a, ,m,u,n,d,o]
+    
+
+ //       var mensagemEncriptada = [];
+ //       var msg = "GILVAN";
+        
+ //       for (var i =0; i < msg.length; i++) {
+ //           mensagemEncriptada = msg.charCodeAt(1);
+
+
+    </script>
+
+</body>
+</html>
+
